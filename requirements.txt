@@ -1,0 +1,7 @@
+langchain==0.0.271
+llama_cpp_python==0.1.77
+matplotlib==3.7.1
+pandas==1.5.3
+scipy==1.8.1
+seaborn==0.12.2
+streamlit==1.25.0
