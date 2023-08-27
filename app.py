@@ -9,7 +9,7 @@ st.text("by @msuatgunerli")
 
 st.divider()
 
-uploaded_file = st.file_uploader("Upload a Document:", accept_multiple_files=False, type=['pdf', 'txt'])
+uploaded_file = st.file_uploader("Upload a Single Document:", accept_multiple_files=False, type=['pdf', 'txt'])
 
 if uploaded_file is not None:
     filetype = pathlib.Path(uploaded_file.name).suffix
@@ -29,8 +29,7 @@ if uploaded_file is not None:
     wrap_print.wrap_print(context)
 
     model_type = st.selectbox("Select LLM Type:", ["LLaMA-7B", "LLaMA-13B"])
-    llm = load_llm.load_llm(model_type= model_type)
-
+    llm = load_llm.load_llm(model_type= model_type, model_path= None)
     context_dependency = st.selectbox("Select Context Dependence Level (set to low if the model is failing to generate context dependent answers):", ["low", "medium", "high"])
 
     if st.button("Generate Response"):
