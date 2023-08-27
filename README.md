@@ -9,9 +9,13 @@ FAISSAL allows you to upload an individual document, currently limited to PDF or
 
 ## How to Use
 
+0. **Installing the Required Dependencies and Running the Web App**: Ensure that the required dependencies listed on the requirements.txt file are installed on your local machine. Upon installing the dependencies, you can create a new terminal window within the main folder of this repository and run the following command to launch the Web App on your default browser:
+
+   `streamlit run app.py`
+
 1. **Upload a Document**: Begin by uploading a single document in PDF or TXT format using the "Browse files" button or by dragging and dropping a file.
 
-2. **Select Sentence-Transformers Model**: Choose a Sentence-Transformers model to generate the embeddings. This step uses LangChain's HuggingFaceEmbeddings, which relies on the sentence_transformers Python package to function. The available options are as follows, which will be downloaded automatically if not already present on your local machine:
+2. **Select Sentence-Transformers Model**: Choose a Sentence-Transformers model to generate the embeddings. This step uses LangChain's HuggingFaceEmbeddings, which relies on the sentence_transformers Python package to function. The available options are as follows, which should be downloaded automatically if not already present on your local machine:
    - `all-MiniLM-L6-v2`
    - `multi-qa-mpnet-base-dot-v1`
 
