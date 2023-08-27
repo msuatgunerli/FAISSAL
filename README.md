@@ -11,7 +11,7 @@ FAISSAL allows you to upload an individual document, currently limited to PDF or
 
 1. **Upload a Document**: Begin by uploading a single document in PDF or TXT format using the "Browse files" button or by dragging and dropping a file.
 
-2. **Select Sentence-Transformers Model**: Choose a Sentence-Transformers model for generating embeddings. The available options are:
+2. **Select Sentence-Transformers Model**: Choose a Sentence-Transformers model to generate the embeddings. This step uses LangChain's HuggingFaceEmbeddings, which relies on the sentence_transformers Python package to function. The available options are as follows, which will be downloaded automatically if not already present on your local machine:
    - `all-MiniLM-L6-v2`
    - `multi-qa-mpnet-base-dot-v1`
 
